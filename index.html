@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  document.documentElement.classList.add('js');
+  try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;}catch(e){}
+</script>
+<link rel="icon" href="Company Logo top.jpeg" type="image/x-icon">
+<title>Natigilah Ventures — Nairobi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Nat-style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="nav">
+    <a class="brand" href="#top"><div class="logo-circle"><img src="Company Logo top.jpeg" alt="Natigilah Ventures" class="brand-icon"></div><span>Natigilah Ventures</span></a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark mode">
+      <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul id="navMenu">
+      <li><a class="link" href="#top">HOME</a></li>
+      <li><a class="link" href="#about">ABOUT US</a></li>
+      <li><a class="link" href="#products">PRODUCTS</a></li>
+      <li><a class="link" href="#services">SERVICES</a></li>
+      <li><a class="link" href="#how">RESOURCES</a></li>
+      <li><a class="link" href="#contact">CONTACTS</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="slider" id="slider" aria-roledescription="carousel" aria-label="Featured products">
+  <div class="slides">
+
+    <article class="slide is-active" style="--img:url('Images/Spices-top.jpeg')">
+      <div class="wrap"><div class="slide-text">
+        <h2>Natural spices for everyday cooking</h2>
+        <p>High-quality spices at affordable prices, ready for wholesale and retail orders.</p>
+        <a class="btn btn-primary" href="#products" data-filter="Spices">See spices</a>
+      </div></div>
+    </article>
+
+    <article class="slide" style="--img:url('Handkerchief-top.jpeg')">
+      <div class="wrap"><div class="slide-text">
+        <h2>Handkerchiefs</h2>
+        <p>Available for wholesale and retail orders across Kenya.</p>
+        <a class="btn btn-primary" href="#products" data-filter="Handkerchiefs">See handkerchiefs</a>
+      </div></div>
+    </article>
+
+    <article class="slide" style="--img:url('Images/Facetowel-top.jpeg')">
+      <div class="wrap"><div class="slide-text">
+        <h2>Face towels</h2>
+        <p>Available for wholesale and retail orders across Kenya.</p>
+        <a class="btn btn-primary" href="#products" data-filter="Face Towels">See face towels</a>
+      </div></div>
+    </article>
+
+    <article class="slide" style="--img:url('Images/Nailcutter-top.jpeg')">
+      <div class="wrap"><div class="slide-text">
+        <h2>Nail cutters</h2>
+        <p>Available for wholesale and retail orders across Kenya.</p>
+        <a class="btn btn-primary" href="#products" data-filter="Nail Cutters">See nail cutters</a>
+      </div></div>
+    </article>
+
+  </div>
+  <button class="sl-btn sl-prev" aria-label="Previous slide">&#8249;</button>
+  <button class="sl-btn sl-next" aria-label="Next slide">&#8250;</button>
+  <div class="sl-dots"></div>
+  <button class="sl-pause" aria-label="Pause slideshow">Pause</button>
+</section>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Serving Nairobi and businesses across Kenya</span>
+        <h1>One partner for sourcing, warehousing, distribution and delivery — done right, on schedule.</h1>
+        <p class="lede">We handle the trading and distribution work that keeps your shelves stocked: product sourcing, warehousing, wholesale distribution, and delivery — for retailers, supermarkets, and businesses across the country.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href="#contact">Get a free quote</a>
+          <a class="btn btn-ghost" href="#products">See our products</a>
+        </div>
+      </div>
+      <div class="checklist">
+        <h3>What's included on every order</h3>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="#E8622C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>A clear supply agreement before any order is placed</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="#E8622C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Vetted, trained staff for every delivery</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="#E8622C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Fixed pricing and lead times agreed upfront</li>
+          <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8.5L6.5 12L13 4.5" stroke="#E8622C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Dedicated account contact for repeat orders</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About (tabs) -->
+  <section class="about" id="about">
+    <div class="wrap about-grid">
+      <a class="brand about-logo" href="#top"><img src="Company Logo.jpeg" alt="Natigilah Ventures"></a>
+      <div class="tabs">
+        <div class="tab-list" role="tablist" aria-label="About Natigilah Ventures">
+          <button class="tab" role="tab" id="tab-mission" aria-controls="panel-mission" aria-selected="true">MISSION</button>
+          <button class="tab" role="tab" id="tab-vision" aria-controls="panel-vision" aria-selected="false" tabindex="-1">VISION</button>
+          <button class="tab" role="tab" id="tab-values" aria-controls="panel-values" aria-selected="false" tabindex="-1">CORE VALUES</button>
+          <button class="tab" role="tab" id="tab-products" aria-controls="panel-products" aria-selected="false" tabindex="-1">OUR PRODUCTS</button>
+        </div>
+        <div class="tab-panel" role="tabpanel" id="panel-mission" aria-labelledby="tab-mission"><h2>To provide High-quality, natural and affordable spices that inspire delicious cooking and enrich everyday meals.</h2></div>
+        <div class="tab-panel" role="tabpanel" id="panel-vision" aria-labelledby="tab-vision" hidden><h2>To become Africa's most trusted and loved spice brand, recognized for quality, innovation and authentic flavor.</h2></div>
+        <div class="tab-panel" role="tabpanel" id="panel-values" aria-labelledby="tab-values" hidden><ul><li>Quality</li><li>Authenticity</li><li>Innovation</li><li>Excellence</li></ul></div>
+        <div class="tab-panel" role="tabpanel" id="panel-products" aria-labelledby="tab-products" hidden><ol><li>Handkerchiefs</li><li>Nail Cutters</li><li>Face Towels</li><li>Spices</li></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products gallery -->
+  <section id="products">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Our products</h2>
+        <p>Filter by product and tap any photo to view it larger.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filter products">
+        <button class="filter on" data-cat="all">All</button>
+        <button class="filter" data-cat="Handkerchiefs">Handkerchiefs</button>
+        <button class="filter" data-cat="Nail Cutters">Nail Cutters</button>
+        <button class="filter" data-cat="Face Towels">Face Towels</button>
+        <button class="filter" data-cat="Spices">Spices</button>
+      </div>
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>What we do</h2>
+        <p>Five services, one ordering process. Pick what you need below and we'll follow up with a quote.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3l7 3-7 3-7-3 7-3z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 6v8l7 3 7-3V6" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M10 9v9" stroke="#fff" stroke-width="1.6"/></svg></div>
+          <h3>Wholesale distribution</h3>
+          <p>Bulk supply of goods to retailers, supermarkets, and outlets across the country.</p>
+          <a class="quote" href="#contact" data-service="Wholesale Distribution">Get a quote →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="3" y="4" width="14" height="12" rx="1" stroke="#fff" stroke-width="1.6"/><path d="M3 9h14M3 13h14" stroke="#fff" stroke-width="1.4"/></svg></div>
+          <h3>Warehousing &amp; storage</h3>
+          <p>Secure storage and inventory handling for goods in transit or awaiting distribution.</p>
+          <a class="quote" href="#contact" data-service="Warehousing & Storage">Get a quote →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="7" stroke="#fff" stroke-width="1.6"/><path d="M3 10h14M10 3a11 11 0 010 14M10 3a11 11 0 000 14" stroke="#fff" stroke-width="1.3"/></svg></div>
+          <h3>Import &amp; sourcing</h3>
+          <p>Sourcing and importing products from local and international suppliers on your behalf.</p>
+          <a class="quote" href="#contact" data-service="Import & Sourcing">Get a quote →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="7" width="11" height="7" rx="1" stroke="#fff" stroke-width="1.6"/><path d="M13 9h3l2 2.5V14h-5V9z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6" cy="15.5" r="1.4" stroke="#fff" stroke-width="1.4"/><circle cx="15" cy="15.5" r="1.4" stroke="#fff" stroke-width="1.4"/></svg></div>
+          <h3>Logistics &amp; delivery</h3>
+          <p>Transport and last-mile delivery of goods to your outlets, warehouse, or clients.</p>
+          <a class="quote" href="#contact" data-service="Logistics & Delivery">Get a quote →</a>
+        </div>
+
+        <div class="service-card">
+          <div class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 3v14" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><path d="M4 4h10l-2.5 3L14 10H4" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+          <h3>Brand representation</h3>
+          <p>Representing and building market presence for brands entering or expanding in the local market.</p>
+          <a class="quote" href="#contact" data-service="Brand Representation">Get a quote →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>How an order works</h2>
+        <p>The same three steps whether it's a single delivery or an ongoing supply arrangement.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h4>Tell us what you need</h4>
+          <p>Send the form below or call us with the products, quantities, and delivery location.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h4>We confirm and quote</h4>
+          <p>We confirm availability, sourcing, and lead time, then send a fixed price before confirming the order.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h4>We deliver</h4>
+          <p>We source, store, and deliver on the agreed schedule, and follow up to confirm the order arrived as expected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">Get in touch</span>
+        <h2 style="font-size:28px;margin-bottom:20px;">Request a quote</h2>
+        <h4>Phone</h4>
+<p><a href="tel:+254715665980">0715 665 980</a><br><a href="tel:+254727257682">0727 257 682</a></p>
+<h4>Email</h4>
+<p><a href="mailto:info@natven.co.ke">info@natven.co.ke</a><br><a href="mailto:natigilahventureslimited@gmail.com">natigilahventureslimited@gmail.com</a></p>
+        <h4>Address</h4>
+        <p>22612-00100<br>Nairobi, Kenya</p>
+        <h4>Hours</h4>
+        <p>Mon–Fri, 9:00–17:00<br>Sat, 9:00–13:00</p>
+      </div>
+      <div>
+        <form id="quoteForm">
+          <div class="two-col">
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+             <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+             <div class="form-row">
+              <label for="location">Location</label>
+              <input type="text" id="location" name="location" required>
+            </div>
+          <div class="form-row">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+          
+          </div>
+          <div class="form-row">
+            <label for="message">Details</label>
+            <textarea id="message" name="message" placeholder="Products, quantities, location, and rough timing" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send request</button>
+          <p id="formMsg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="#top">Natigilah Ventures</a>
+      <div>
+        <a class="link" href="#products" style="margin-right:20px;">Products</a>
+        <a class="link" href="#how" style="margin-right:20px;">Make an order</a>
+        <a class="link" href="#contact">Contact</a>
+      </div>
+    </div>
+    <p class="copy">Copyright © 2026 Natigilah Ventures. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Product photo">
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
+  <div class="lb-stage" id="lbStage"></div>
+  <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
+</div>
+<button class="to-top" id="toTop" aria-label="Back to top">&#8593;</button>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="Nat-script.js"></script>
+</body>
+</html>
